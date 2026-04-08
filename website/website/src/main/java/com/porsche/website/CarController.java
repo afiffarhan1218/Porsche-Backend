@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController // Tells Spring this handles web traffic
 @RequestMapping("/api/cars") // The web address for this logic
-@CrossOrigin(origins = "*") // Security setting to let your HTML frontend talk to it
+@CrossOrigin(origins = "https://porsche-frontend-zbka.vercel.app") // Security setting to let your HTML frontend talk to it
 public class CarController {
 
     private final CarRepository repository;
